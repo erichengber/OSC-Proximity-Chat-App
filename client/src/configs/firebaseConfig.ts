@@ -15,6 +15,8 @@ const firebaseConfig = {
 let app;
 let auth: Auth;
 
+console.log("API_KEY: " + API_KEY);
+
 // Checks if auth and app have already been initilized as Firebase will throw an error if we try to initialize twice!
 if (!getApps().length) {
   try {
