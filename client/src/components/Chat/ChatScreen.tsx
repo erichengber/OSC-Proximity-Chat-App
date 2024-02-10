@@ -1,15 +1,11 @@
 import React from "react";
 import {
-  Keyboard,
   KeyboardAvoidingView,
-  TouchableWithoutFeedback,
   Platform,
   View,
   Text,
   StyleSheet,
   Dimensions,
-  SafeAreaView,
-  ScrollView,
 } from "react-native";
 import { ChatInput } from "../Common/CustomInputs";
 import { ChatSendButton } from "../Common/CustomButtons";
@@ -71,7 +67,7 @@ const ChatScreen = () => {
               Chat Screen
             </Text>
           </View>
-          <SignOutButton />
+          <SignOutButton />          
           <View style={styles.chatContainer}>
             <MessageChannel messages={messages} />
           </View>
